@@ -1,1 +1,0 @@
-Vendor risk assessment documentation.
