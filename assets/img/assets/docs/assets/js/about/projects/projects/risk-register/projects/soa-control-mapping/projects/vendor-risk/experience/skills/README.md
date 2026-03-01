@@ -1,1 +1,0 @@
-Technical and professional skills.
