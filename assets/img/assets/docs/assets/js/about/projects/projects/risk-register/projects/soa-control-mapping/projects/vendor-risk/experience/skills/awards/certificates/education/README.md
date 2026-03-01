@@ -1,1 +1,0 @@
-Education history and coursework.
