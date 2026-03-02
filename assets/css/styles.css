@@ -46,3 +46,63 @@ h1, h2, h3 {
 p {
   margin-bottom: 16px;
 }
+
+/* =========================
+   Sticky Top Navigation
+   ========================= */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.nav-left .logo {
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a,
+.nav-links span {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-actions a {
+  text-decoration: none;
+  font-weight: 500;
+}
