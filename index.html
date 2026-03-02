@@ -11,47 +11,91 @@
 </head>
 <body>
 
-  <!-- Navigation -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
+  <!-- Sticky Navigation -->
+  <header class="site-header">
+    <nav class="nav">
+      <div class="nav-left">
+        <a href="/" class="logo">Adrian Johnson</a>
+      </div>
+
+      <ul class="nav-links">
         <li><a href="/about/">About</a></li>
-        <li><a href="/projects/">Projects</a></li>
+
+        <li class="dropdown">
+          <span>Portfolio</span>
+          <ul class="dropdown-menu">
+            <li><a href="/projects/">Projects</a></li>
+            <li><a href="/experience/">Experience</a></li>
+            <li><a href="/skills/">Skills</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <span>Achievements</span>
+          <ul class="dropdown-menu">
+            <li><a href="/awards/">Awards</a></li>
+            <li><a href="/certificates/">Certificates</a></li>
+            <li><a href="/education/">Education</a></li>
+          </ul>
+        </li>
+
+        <li><a href="/blog/">Blog</a></li>
         <li><a href="/contact/">Contact</a></li>
       </ul>
+
+      <div class="nav-actions">
+        <a href="https://github.com/adrianxjohnson" target="_blank">GitHub</a>
+        <a href="#" target="_blank">LinkedIn</a>
+      </div>
     </nav>
   </header>
 
-  <!-- Main Content -->
+  <!-- Hero Section -->
   <main>
-    <section>
-      <h1>Adrian Johnson</h1>
-      <h2>Governance, Risk & Compliance (GRC)</h2>
-
+    <section class="hero">
+      <h1>Governance, Risk & Compliance Portfolio</h1>
       <p>
-        Welcome to my portfolio. I am transitioning into cybersecurity with a
-        focus on governance, risk, and compliance. This site highlights hands-on
-        GRC projects, documentation, and practical work aligned with real-world
-        frameworks and controls.
+        Hands-on GRC projects focused on risk management, control mapping,
+        documentation, and real-world compliance practices.
       </p>
+
+      <div class="hero-actions">
+        <a href="/projects/" class="btn-primary">View Projects</a>
+      </div>
     </section>
 
-    <section>
-      <h3>Featured Project</h3>
-      <p>
-        <a href="/projects/risk-register/">Enterprise Risk Register</a><br />
-        A structured risk register aligned with governance and compliance best practices.
-      </p>
+    <!-- Featured Work -->
+    <section class="featured-work">
+      <h2>Featured Work</h2>
+
+      <div class="project-card">
+        <h3>Enterprise Risk Register</h3>
+        <p>
+          A structured risk register aligned with governance and compliance best practices.
+        </p>
+        <a href="/projects/risk-register/">View Project</a>
+      </div>
+    </section>
+
+    <!-- Skills Snapshot -->
+    <section class="skills-snapshot">
+      <h2>Core Skills</h2>
+      <ul>
+        <li>Risk Assessment & Registers</li>
+        <li>Control Mapping (NIST / ISO)</li>
+        <li>Policy & Documentation</li>
+        <li>Audit & Compliance Support</li>
+      </ul>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer>
+  <footer class="site-footer">
     <p>&copy; 2026 Adrian Johnson</p>
   </footer>
 
-  <!-- Global JS -->
+  <!-- Global JavaScript -->
   <script src="/assets/js/main.js"></script>
+
 </body>
 </html>
