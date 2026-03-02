@@ -106,3 +106,43 @@ p {
   text-decoration: none;
   font-weight: 500;
 }
+
+/* =========================
+   Dropdown Fix (Item 2C)
+   ========================= */
+
+.nav-links li {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  min-width: 200px;
+  padding: 10px 0;
+  margin-top: 10px;
+
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  z-index: 2000;
+}
+
+.dropdown-menu li {
+  display: block;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 14px;
+  white-space: nowrap;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
