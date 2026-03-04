@@ -341,3 +341,12 @@ footer{
   border-top: 1px solid var(--border);
   color: var(--muted);
 }
+
+.project-card {
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(0,0,0,.35);
+}
