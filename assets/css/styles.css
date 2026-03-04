@@ -168,3 +168,176 @@ p {
 .dropdown-menu a:hover {
   background: #f3f4f6;
 }
+
+/* =========================
+   Modern Portfolio Theme
+   (Jhaxce-inspired look)
+   Paste at bottom of styles.css
+========================= */
+
+:root{
+  --bg: #0b1220;
+  --panel: rgba(255,255,255,.06);
+  --panel-strong: rgba(255,255,255,.10);
+  --text: rgba(255,255,255,.92);
+  --muted: rgba(255,255,255,.70);
+  --border: rgba(255,255,255,.12);
+  --shadow: 0 18px 50px rgba(0,0,0,.35);
+  --radius: 16px;
+
+  --primary: #60a5fa;
+  --primary-2: #34d399;
+}
+
+/* Page background + type */
+body{
+  background:
+    radial-gradient(900px 500px at 20% 0%, rgba(96,165,250,.18), transparent 60%),
+    radial-gradient(700px 400px at 80% 10%, rgba(52,211,153,.16), transparent 55%),
+    var(--bg);
+  color: var(--text);
+}
+
+main{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Sticky header: darker glass */
+.site-header{
+  background: rgba(11,18,32,.72);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+/* Nav links */
+.nav a, .nav-links a, .nav-links span{
+  color: var(--text);
+  opacity: .9;
+}
+.nav a:hover, .nav-links a:hover{
+  opacity: 1;
+  text-decoration: none;
+}
+
+/* Dropdown menu panel look */
+.dropdown-menu{
+  background: rgba(15,23,42,.92);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 8px;
+}
+.dropdown-menu a{
+  border-radius: 10px;
+}
+.dropdown-menu a:hover{
+  background: rgba(255,255,255,.08);
+}
+
+/* Hero section spacing + big type */
+.hero{
+  padding: 56px 0 10px;
+}
+.hero h1{
+  font-size: 44px;
+  line-height: 1.05;
+  margin-bottom: 10px;
+  letter-spacing: -0.02em;
+}
+.hero p{
+  color: var(--muted);
+  font-size: 16px;
+  max-width: 70ch;
+}
+
+/* The “pill” status badge (like “Available for opportunities”) */
+.hero .status,
+.status-pill{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid var(--border);
+  color: var(--text);
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+
+/* Buttons (hero CTA) */
+.btn-primary, .btn-secondary{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+.btn-primary{
+  background: linear-gradient(90deg, var(--primary), var(--primary-2));
+  color: #08101f;
+}
+.btn-secondary{
+  background: rgba(255,255,255,.08);
+  color: var(--text);
+  border-color: var(--border);
+}
+.btn-primary:hover, .btn-secondary:hover{
+  transform: translateY(-1px);
+}
+
+/* Make Featured Work look like modern “cards” */
+.featured-work{
+  margin-top: 26px;
+}
+.project-card{
+  background: rgba(255,255,255,.06);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: 0 12px 40px rgba(0,0,0,.25);
+  transition: transform .15s ease, border-color .15s ease;
+}
+.project-card:hover{
+  transform: translateY(-2px);
+  border-color: rgba(96,165,250,.35);
+}
+.project-card p{
+  color: var(--muted);
+}
+
+/* Tag “chips” (for tech labels) */
+.tag, .chip{
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 13px;
+  margin: 6px 6px 0 0;
+}
+
+/* Section headings rhythm */
+h2{
+  margin-top: 34px;
+  margin-bottom: 10px;
+  letter-spacing: -0.01em;
+}
+h3{
+  letter-spacing: -0.01em;
+}
+
+/* Footer polish */
+footer{
+  margin-top: 44px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+}
