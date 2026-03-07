@@ -427,3 +427,15 @@ nav a {
   transform: translateY(-6px);
   box-shadow: 0 15px 40px rgba(40,70,255,0.12);
 }
+
+main {
+  background:
+    radial-gradient(circle at 20% 30%, rgba(173, 210, 255, 0.35), transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(220, 200, 255, 0.35), transparent 40%),
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #eaf1ff 50%,
+      #f1ecff 100%
+    );
+}
