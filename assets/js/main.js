@@ -25,16 +25,26 @@ let lastParticleTime = 0;
 
 document.addEventListener("mousemove", (e) => {
   const now = Date.now();
-
-  // limit particle creation
   if (now - lastParticleTime < 40) return;
   lastParticleTime = now;
 
   const particle = document.createElement("div");
   particle.className = "cursor-particle";
 
+  const size = Math.random() * 8 + 6;
+  const hueShift = Math.random() * 40 - 20;
+
+  particle.style.width = size + "px";
+  particle.style.height = size + "px";
+
   particle.style.left = e.clientX + "px";
   particle.style.top = e.clientY + "px";
+
+  particle.style.background =
+    `radial-gradient(circle,
+      hsla(${220 + hueShift}, 90%, 70%, 0.9) 0%,
+      hsla(${250 + hueShift}, 90%, 75%, 0.4) 55%,
+      rgba(124,140,255,0) 100%)`;
 
   document.body.appendChild(particle);
 
