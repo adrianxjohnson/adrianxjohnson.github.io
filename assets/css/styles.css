@@ -439,3 +439,27 @@ main {
       #f1ecff 100%
     );
 }
+
+/* Cursor glow particles */
+.cursor-particle {
+  position: fixed;
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  pointer-events: none;
+  z-index: 9999;
+  background: radial-gradient(circle, rgba(110,168,255,0.85) 0%, rgba(124,140,255,0.45) 55%, rgba(124,140,255,0) 100%);
+  transform: translate(-50%, -50%);
+  animation: cursorFade 0.9s ease-out forwards;
+}
+
+@keyframes cursorFade {
+  0% {
+    opacity: 0.9;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(2.4);
+  }
+}
