@@ -350,3 +350,75 @@ footer{
   transform: translateY(-6px);
   box-shadow: 0 20px 45px rgba(0,0,0,.35);
 }
+
+/* ===== Modern Portfolio Theme ===== */
+
+body {
+  background: linear-gradient(180deg, #ffffff 0%, #f7f9ff 100%);
+  color: #1a1a1a;
+}
+
+/* Section spacing */
+section {
+  margin: 120px auto;
+  max-width: 1100px;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Card styling */
+.project-card,
+.skills-snapshot,
+.cta {
+  background: white;
+  border: 1px solid #e6ebff;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(40,70,255,0.05);
+}
+
+/* Buttons */
+button,
+.cta a,
+.btn {
+  background: linear-gradient(135deg, #6ea8ff, #7c8cff);
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all .2s ease;
+}
+
+button:hover,
+.cta a:hover,
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(90,120,255,0.25);
+}
+
+/* Navigation */
+nav a {
+  color: #3a4bff;
+}
+
+/* Featured cards hover */
+.project-card {
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 40px rgba(40,70,255,0.12);
+}
