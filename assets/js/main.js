@@ -21,12 +21,20 @@
   });
 })();
 
+let lastParticleTime = 0;
+
 document.addEventListener("mousemove", (e) => {
+  const now = Date.now();
+
+  // limit particle creation
+  if (now - lastParticleTime < 40) return;
+  lastParticleTime = now;
+
   const particle = document.createElement("div");
   particle.className = "cursor-particle";
 
-  particle.style.left = `${e.clientX}px`;
-  particle.style.top = `${e.clientY}px`;
+  particle.style.left = e.clientX + "px";
+  particle.style.top = e.clientY + "px";
 
   document.body.appendChild(particle);
 
